@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: "feat({{collection}}): :sparkles: Create {{slug}}"
+    update: "chore({{collection}}): :recycle: Update {{slug}}"
+    delete: "chore({{collection}}): :recycle: Delete {{slug}}"
+    uploadMedia: "feat(assets): :bento: Upload {{path}}"
+    deleteMedia: "chore(assets): :wastebasket: Delete {{path}}"
+
+media_folder: src/images/uploads
+
+collections:
+  - name: blog
+    label: Blog
+    folder: src/_posts/
+    extension: .md
+    format: frontmatter
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{title}}'
+    editor:
+      preview: false
+    fields:
+      - { label: Layout, name: layout, widget: hidden, default: post }
+      - { label: Title, name: title, widget: string }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Body, name: body, widget: markdown }
+  - name: pages
+    label: Pages
+    editor:
+      preview: false
+    files:
+      - label: Index Page
+        name: index
+        file: src/index.md
+        fields:
+          - { label: Layout, name: title, widget: hidden, default: home }
+          - { label: Body, name: body, widget: markdown }
+      - label: About Page
+        name: about
+        file: src/about.md
+        fields:
+          - { label: Title, name: title, widget: hidden, default: About }
+          - { label: Layout, name: layout, widget: hidden, default: page }
+          - { label: Permalink, name: permalink, widget: string, default: '/about/' }
+          - { label: Body, name: body, widget: markdown }
