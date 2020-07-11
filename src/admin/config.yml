@@ -8,6 +8,8 @@ backend:
     uploadMedia: "feat(assets): :bento: Upload {{path}}"
     deleteMedia: "chore(assets): :wastebasket: Delete {{path}}"
 
+local_backend: true
+
 media_folder: src/images/uploads
 
 collections:
