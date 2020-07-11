@@ -8,7 +8,10 @@ This is a quick tutorial to showcase how you can quickly integrate Netlify CMS i
 
 The code for this tutorial can be found at:
 
+{% raw %}
+<!-- Dev.to liquid tag -->
 {% github andrewmcodes/bridgetown-netlify-cms-starter no-readme %}
+{% endraw %}
 
 Let's get started!
 
