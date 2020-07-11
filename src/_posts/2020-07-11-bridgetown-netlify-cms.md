@@ -1,8 +1,16 @@
 ---
 layout: post
-title: Bridgetown + Netlify CMS
+title: Creating a blog with Bridgetown and Netlify CMS
 date: 2020-07-11T04:01:34.736Z
 ---
+
+This is a quick tutorial to showcase how you can quickly integrate Netlify CMS into your [Bridgetown](https://www.bridgetownrb.com) site.
+
+The code for this tutorial can be found at:
+
+{% github andrewmcodes/bridgetown-netlify-cms-starter no-readme %}
+
+Let's get started!
 
 ### Setup
 
@@ -219,7 +227,9 @@ Click the `Continue with GitHub` button. After you authenticate with GitHub, you
 
 ![Netlify CMS](https://dev-to-uploads.s3.amazonaws.com/i/jfdgw5nazt1bzuwadnhn.jpg)
 
-__Note:__ At this point I would go back your site settings and set the registration preferences to __invite only__!
+__Note:__ At this point, I would go back to your site settings and set the registration preferences to __invite only__!
+
+### Publishing
 
 From here you should be all set! You can create a new blog post, edit content on your pages, upload images, and more!
 
@@ -227,8 +237,18 @@ After changing the index page for example, hit the `publish` button at the top o
 
 What this will do is add a commit to your GitHub repo with the changes and if Netlify is set to deploy your default branch (this is default behavior), the Netlify will automatically redeploy the site with the changes.
 
-To go back to your site, click the user icon in the top right of the CMS and log out. __Note:__ there is some weird bug that pops up after it logs you out. Either refresh the page or just change the url back to your index route (aka `yoursite.netlify.app/`).
+To go back to your site, change your url to the root, or click the user icon in the top right of the CMS and log out.
+
+__Note:__ there is some weird bug that pops up after it logs you out. Either refresh the page or just change the url back to your root url.
 
 After the deploy finishes (it is very quick if you followed along), the content you changed or added should be reflected! I updated the index page, and my site now looks like:
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/y2q7dh2fqorxdnjxs151.jpg)
+
+### Wrap up
+
+From this point, you can continue changing your Bridgetown site, and configure the CMS config file as needed. Hopefully this gives you all the excuse you need to try [Bridgetown](https://www.bridgetownrb.com)! If you encounter any issues or find a bug, feel free to report it on the [repository](https://github.com/andrewmcodes/bridgetown-netlify-cms-starter).
+
+You can find the demo for this project [here](https://bridgetown-netlify-cms-starter.netlify.app/).
+
+Happy coding!

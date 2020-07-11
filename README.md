@@ -3,9 +3,9 @@
   <a href="https://github.com/andrewmcodes/bridgetown_netlify_cms_starter/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <!-- <a href="https://app.netlify.com/sites/bridgetown-netlify-cms-starter/deploys" target="_blank">
-    <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/cf6f223f-43bd-4d4c-8bfe-82451efc40c8/deploy-status" />
-  </a> -->
+  <a href="https://app.netlify.com/sites/bridgetown-netlify-cms-starter/deploys" target="_blank">
+    <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/09cb9eb7-70f5-4326-8b87-78aa29740817/deploy-status" />
+  </a>
 </p>
 
 > A simple starter template for building a static Bridgetown blog hosted on Netlify with Netlify CMS.
